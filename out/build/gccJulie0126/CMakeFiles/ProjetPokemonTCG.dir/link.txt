@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/ProjetPokemonTCG.dir/jeu.cpp.o -o ProjetPokemonTCG 
