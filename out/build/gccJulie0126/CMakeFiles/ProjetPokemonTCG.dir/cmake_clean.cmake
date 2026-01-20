@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ProjetPokemonTCG.dir/jeu.cpp.o"
-  "CMakeFiles/ProjetPokemonTCG.dir/jeu.cpp.o.d"
+  "CMakeFiles/ProjetPokemonTCG.dir/src/main.cpp.o"
+  "CMakeFiles/ProjetPokemonTCG.dir/src/main.cpp.o.d"
   "ProjetPokemonTCG"
   "ProjetPokemonTCG.pdb"
 )
