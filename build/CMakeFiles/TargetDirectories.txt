@@ -1,0 +1,4 @@
+/home/julie/Projet_Pokemon_IN204/build/CMakeFiles/ProjetPokemonTCG.dir
+/home/julie/Projet_Pokemon_IN204/build/CMakeFiles/GraphiqueEssai.dir
+/home/julie/Projet_Pokemon_IN204/build/CMakeFiles/edit_cache.dir
+/home/julie/Projet_Pokemon_IN204/build/CMakeFiles/rebuild_cache.dir
