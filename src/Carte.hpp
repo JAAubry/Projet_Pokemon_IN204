@@ -11,19 +11,19 @@ private:
 
 public:
     // Constructeurs
-    Carte();
+    Carte(); //carte 'vide'
     Carte(const std::string& nom, int pv, int degats,int energieR, int energieA);
 
     // extracteur
-    std::string getNom() const;
+    const std::string getNom() const;
     int getPointsDeVie() const;
     int getDegatsAttaque() const;
     int getEnergieRetraite() const;
     int getEnergieAttaque() const;
 
-    // Méthodes
+    // Combat
     void subirDegats(int degats);
+    // Etat de la carte 
     bool estKO() const;
+    bool estValide() const;
 };
-
-#endif // CARTE_HPP
