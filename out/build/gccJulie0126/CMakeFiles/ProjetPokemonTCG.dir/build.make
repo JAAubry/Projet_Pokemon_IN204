@@ -92,6 +92,9 @@ ProjetPokemonTCG_EXTERNAL_OBJECTS =
 
 ProjetPokemonTCG: CMakeFiles/ProjetPokemonTCG.dir/src/main.cpp.o
 ProjetPokemonTCG: CMakeFiles/ProjetPokemonTCG.dir/build.make
+ProjetPokemonTCG: /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.6.1
+ProjetPokemonTCG: /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.6.1
+ProjetPokemonTCG: /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.6.1
 ProjetPokemonTCG: CMakeFiles/ProjetPokemonTCG.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/julie/Projet_Pokemon_IN204/out/build/gccJulie0126/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ProjetPokemonTCG"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ProjetPokemonTCG.dir/link.txt --verbose=$(VERBOSE)

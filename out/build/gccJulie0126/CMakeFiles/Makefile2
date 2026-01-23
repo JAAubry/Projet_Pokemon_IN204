@@ -64,6 +64,7 @@ CMAKE_BINARY_DIR = /home/julie/Projet_Pokemon_IN204/out/build/gccJulie0126
 
 # The main recursive "all" target.
 all: CMakeFiles/ProjetPokemonTCG.dir/all
+all: CMakeFiles/GraphiqueEssai.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -72,6 +73,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/ProjetPokemonTCG.dir/clean
+clean: CMakeFiles/GraphiqueEssai.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -81,7 +83,7 @@ clean: CMakeFiles/ProjetPokemonTCG.dir/clean
 CMakeFiles/ProjetPokemonTCG.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetPokemonTCG.dir/build.make CMakeFiles/ProjetPokemonTCG.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetPokemonTCG.dir/build.make CMakeFiles/ProjetPokemonTCG.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/julie/Projet_Pokemon_IN204/out/build/gccJulie0126/CMakeFiles --progress-num=1,2 "Built target ProjetPokemonTCG"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/julie/Projet_Pokemon_IN204/out/build/gccJulie0126/CMakeFiles --progress-num=3,4 "Built target ProjetPokemonTCG"
 .PHONY : CMakeFiles/ProjetPokemonTCG.dir/all
 
 # Build rule for subdir invocation for target.
@@ -99,6 +101,32 @@ ProjetPokemonTCG: CMakeFiles/ProjetPokemonTCG.dir/rule
 CMakeFiles/ProjetPokemonTCG.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetPokemonTCG.dir/build.make CMakeFiles/ProjetPokemonTCG.dir/clean
 .PHONY : CMakeFiles/ProjetPokemonTCG.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/GraphiqueEssai.dir
+
+# All Build rule for target.
+CMakeFiles/GraphiqueEssai.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GraphiqueEssai.dir/build.make CMakeFiles/GraphiqueEssai.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GraphiqueEssai.dir/build.make CMakeFiles/GraphiqueEssai.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/julie/Projet_Pokemon_IN204/out/build/gccJulie0126/CMakeFiles --progress-num=1,2 "Built target GraphiqueEssai"
+.PHONY : CMakeFiles/GraphiqueEssai.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/GraphiqueEssai.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/julie/Projet_Pokemon_IN204/out/build/gccJulie0126/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/GraphiqueEssai.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/julie/Projet_Pokemon_IN204/out/build/gccJulie0126/CMakeFiles 0
+.PHONY : CMakeFiles/GraphiqueEssai.dir/rule
+
+# Convenience name for target.
+GraphiqueEssai: CMakeFiles/GraphiqueEssai.dir/rule
+.PHONY : GraphiqueEssai
+
+# clean rule for target.
+CMakeFiles/GraphiqueEssai.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GraphiqueEssai.dir/build.make CMakeFiles/GraphiqueEssai.dir/clean
+.PHONY : CMakeFiles/GraphiqueEssai.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
