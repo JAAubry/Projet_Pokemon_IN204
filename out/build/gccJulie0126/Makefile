@@ -129,42 +129,29 @@ ProjetPokemonTCG/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetPokemonTCG.dir/build.make CMakeFiles/ProjetPokemonTCG.dir/build
 .PHONY : ProjetPokemonTCG/fast
 
-#=============================================================================
-# Target rules for targets named GraphiqueEssai
-
-# Build rule for target.
-GraphiqueEssai: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 GraphiqueEssai
-.PHONY : GraphiqueEssai
-
-# fast build rule for target.
-GraphiqueEssai/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GraphiqueEssai.dir/build.make CMakeFiles/GraphiqueEssai.dir/build
-.PHONY : GraphiqueEssai/fast
-
-graphics/GraphiqueEssai.o: graphics/GraphiqueEssai.cpp.o
-.PHONY : graphics/GraphiqueEssai.o
+src/core/Game.o: src/core/Game.cpp.o
+.PHONY : src/core/Game.o
 
 # target to build an object file
-graphics/GraphiqueEssai.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GraphiqueEssai.dir/build.make CMakeFiles/GraphiqueEssai.dir/graphics/GraphiqueEssai.cpp.o
-.PHONY : graphics/GraphiqueEssai.cpp.o
+src/core/Game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetPokemonTCG.dir/build.make CMakeFiles/ProjetPokemonTCG.dir/src/core/Game.cpp.o
+.PHONY : src/core/Game.cpp.o
 
-graphics/GraphiqueEssai.i: graphics/GraphiqueEssai.cpp.i
-.PHONY : graphics/GraphiqueEssai.i
+src/core/Game.i: src/core/Game.cpp.i
+.PHONY : src/core/Game.i
 
 # target to preprocess a source file
-graphics/GraphiqueEssai.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GraphiqueEssai.dir/build.make CMakeFiles/GraphiqueEssai.dir/graphics/GraphiqueEssai.cpp.i
-.PHONY : graphics/GraphiqueEssai.cpp.i
+src/core/Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetPokemonTCG.dir/build.make CMakeFiles/ProjetPokemonTCG.dir/src/core/Game.cpp.i
+.PHONY : src/core/Game.cpp.i
 
-graphics/GraphiqueEssai.s: graphics/GraphiqueEssai.cpp.s
-.PHONY : graphics/GraphiqueEssai.s
+src/core/Game.s: src/core/Game.cpp.s
+.PHONY : src/core/Game.s
 
 # target to generate assembly for a file
-graphics/GraphiqueEssai.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GraphiqueEssai.dir/build.make CMakeFiles/GraphiqueEssai.dir/graphics/GraphiqueEssai.cpp.s
-.PHONY : graphics/GraphiqueEssai.cpp.s
+src/core/Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetPokemonTCG.dir/build.make CMakeFiles/ProjetPokemonTCG.dir/src/core/Game.cpp.s
+.PHONY : src/core/Game.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -190,6 +177,54 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetPokemonTCG.dir/build.make CMakeFiles/ProjetPokemonTCG.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/scene/GameScene.o: src/scene/GameScene.cpp.o
+.PHONY : src/scene/GameScene.o
+
+# target to build an object file
+src/scene/GameScene.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetPokemonTCG.dir/build.make CMakeFiles/ProjetPokemonTCG.dir/src/scene/GameScene.cpp.o
+.PHONY : src/scene/GameScene.cpp.o
+
+src/scene/GameScene.i: src/scene/GameScene.cpp.i
+.PHONY : src/scene/GameScene.i
+
+# target to preprocess a source file
+src/scene/GameScene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetPokemonTCG.dir/build.make CMakeFiles/ProjetPokemonTCG.dir/src/scene/GameScene.cpp.i
+.PHONY : src/scene/GameScene.cpp.i
+
+src/scene/GameScene.s: src/scene/GameScene.cpp.s
+.PHONY : src/scene/GameScene.s
+
+# target to generate assembly for a file
+src/scene/GameScene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetPokemonTCG.dir/build.make CMakeFiles/ProjetPokemonTCG.dir/src/scene/GameScene.cpp.s
+.PHONY : src/scene/GameScene.cpp.s
+
+src/scene/MenuScene.o: src/scene/MenuScene.cpp.o
+.PHONY : src/scene/MenuScene.o
+
+# target to build an object file
+src/scene/MenuScene.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetPokemonTCG.dir/build.make CMakeFiles/ProjetPokemonTCG.dir/src/scene/MenuScene.cpp.o
+.PHONY : src/scene/MenuScene.cpp.o
+
+src/scene/MenuScene.i: src/scene/MenuScene.cpp.i
+.PHONY : src/scene/MenuScene.i
+
+# target to preprocess a source file
+src/scene/MenuScene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetPokemonTCG.dir/build.make CMakeFiles/ProjetPokemonTCG.dir/src/scene/MenuScene.cpp.i
+.PHONY : src/scene/MenuScene.cpp.i
+
+src/scene/MenuScene.s: src/scene/MenuScene.cpp.s
+.PHONY : src/scene/MenuScene.s
+
+# target to generate assembly for a file
+src/scene/MenuScene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetPokemonTCG.dir/build.make CMakeFiles/ProjetPokemonTCG.dir/src/scene/MenuScene.cpp.s
+.PHONY : src/scene/MenuScene.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -198,14 +233,19 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... GraphiqueEssai"
 	@echo "... ProjetPokemonTCG"
-	@echo "... graphics/GraphiqueEssai.o"
-	@echo "... graphics/GraphiqueEssai.i"
-	@echo "... graphics/GraphiqueEssai.s"
+	@echo "... src/core/Game.o"
+	@echo "... src/core/Game.i"
+	@echo "... src/core/Game.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/scene/GameScene.o"
+	@echo "... src/scene/GameScene.i"
+	@echo "... src/scene/GameScene.s"
+	@echo "... src/scene/MenuScene.o"
+	@echo "... src/scene/MenuScene.i"
+	@echo "... src/scene/MenuScene.s"
 .PHONY : help
 
 

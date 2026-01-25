@@ -1,6 +1,8 @@
-CMakeFiles/ProjetPokemonTCG.dir/src/main.cpp.o: \
- /home/julie/Projet_Pokemon_IN204/src/main.cpp /usr/include/stdc-predef.h \
- /home/julie/Projet_Pokemon_IN204/src/core/Game.hpp \
+CMakeFiles/ProjetPokemonTCG.dir/src/scene/GameScene.cpp.o: \
+ /home/julie/Projet_Pokemon_IN204/src/scene/GameScene.cpp \
+ /usr/include/stdc-predef.h \
+ /home/julie/Projet_Pokemon_IN204/src/scene/GameScene.hpp \
+ /home/julie/Projet_Pokemon_IN204/src/scene/Scene.hpp \
  /usr/include/SFML/Graphics.hpp /usr/include/SFML/Window.hpp \
  /usr/include/SFML/System.hpp /usr/include/SFML/Config.hpp \
  /usr/include/SFML/System/Clock.hpp /usr/include/SFML/System/Export.hpp \
@@ -234,16 +236,4 @@ CMakeFiles/ProjetPokemonTCG.dir/src/main.cpp.o: \
  /usr/include/SFML/Graphics/Glsl.hpp /usr/include/SFML/Graphics/Glsl.inl \
  /usr/include/SFML/Graphics/Sprite.hpp \
  /usr/include/SFML/Graphics/Text.hpp \
- /usr/include/SFML/Graphics/VertexBuffer.hpp /usr/include/c++/13/memory \
- /usr/include/c++/13/bits/stl_raw_storage_iter.h \
- /usr/include/c++/13/bits/align.h /usr/include/c++/13/bits/unique_ptr.h \
- /usr/include/c++/13/bits/shared_ptr.h \
- /usr/include/c++/13/bits/shared_ptr_base.h \
- /usr/include/c++/13/bits/allocated_ptr.h \
- /usr/include/c++/13/ext/concurrence.h \
- /usr/include/c++/13/bits/shared_ptr_atomic.h \
- /usr/include/c++/13/bits/atomic_base.h \
- /usr/include/c++/13/bits/atomic_lockfree_defines.h \
- /usr/include/c++/13/backward/auto_ptr.h \
- /usr/include/c++/13/pstl/glue_memory_defs.h \
- /home/julie/Projet_Pokemon_IN204/src/scene/Scene.hpp
+ /usr/include/SFML/Graphics/VertexBuffer.hpp

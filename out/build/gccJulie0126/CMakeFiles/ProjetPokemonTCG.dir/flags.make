@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/julie/Projet_Pokemon_IN204/include
+CXX_INCLUDES = -I/home/julie/Projet_Pokemon_IN204/src -I/home/julie/Projet_Pokemon_IN204/assets
 
 CXX_FLAGS = -g -std=gnu++17
 

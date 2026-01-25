@@ -83,20 +83,68 @@ CMakeFiles/ProjetPokemonTCG.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ProjetPokemonTCG.dir/src/main.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/julie/Projet_Pokemon_IN204/src/main.cpp -o CMakeFiles/ProjetPokemonTCG.dir/src/main.cpp.s
 
+CMakeFiles/ProjetPokemonTCG.dir/src/core/Game.cpp.o: CMakeFiles/ProjetPokemonTCG.dir/flags.make
+CMakeFiles/ProjetPokemonTCG.dir/src/core/Game.cpp.o: /home/julie/Projet_Pokemon_IN204/src/core/Game.cpp
+CMakeFiles/ProjetPokemonTCG.dir/src/core/Game.cpp.o: CMakeFiles/ProjetPokemonTCG.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/julie/Projet_Pokemon_IN204/out/build/gccJulie0126/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ProjetPokemonTCG.dir/src/core/Game.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjetPokemonTCG.dir/src/core/Game.cpp.o -MF CMakeFiles/ProjetPokemonTCG.dir/src/core/Game.cpp.o.d -o CMakeFiles/ProjetPokemonTCG.dir/src/core/Game.cpp.o -c /home/julie/Projet_Pokemon_IN204/src/core/Game.cpp
+
+CMakeFiles/ProjetPokemonTCG.dir/src/core/Game.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ProjetPokemonTCG.dir/src/core/Game.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/julie/Projet_Pokemon_IN204/src/core/Game.cpp > CMakeFiles/ProjetPokemonTCG.dir/src/core/Game.cpp.i
+
+CMakeFiles/ProjetPokemonTCG.dir/src/core/Game.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ProjetPokemonTCG.dir/src/core/Game.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/julie/Projet_Pokemon_IN204/src/core/Game.cpp -o CMakeFiles/ProjetPokemonTCG.dir/src/core/Game.cpp.s
+
+CMakeFiles/ProjetPokemonTCG.dir/src/scene/MenuScene.cpp.o: CMakeFiles/ProjetPokemonTCG.dir/flags.make
+CMakeFiles/ProjetPokemonTCG.dir/src/scene/MenuScene.cpp.o: /home/julie/Projet_Pokemon_IN204/src/scene/MenuScene.cpp
+CMakeFiles/ProjetPokemonTCG.dir/src/scene/MenuScene.cpp.o: CMakeFiles/ProjetPokemonTCG.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/julie/Projet_Pokemon_IN204/out/build/gccJulie0126/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ProjetPokemonTCG.dir/src/scene/MenuScene.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjetPokemonTCG.dir/src/scene/MenuScene.cpp.o -MF CMakeFiles/ProjetPokemonTCG.dir/src/scene/MenuScene.cpp.o.d -o CMakeFiles/ProjetPokemonTCG.dir/src/scene/MenuScene.cpp.o -c /home/julie/Projet_Pokemon_IN204/src/scene/MenuScene.cpp
+
+CMakeFiles/ProjetPokemonTCG.dir/src/scene/MenuScene.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ProjetPokemonTCG.dir/src/scene/MenuScene.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/julie/Projet_Pokemon_IN204/src/scene/MenuScene.cpp > CMakeFiles/ProjetPokemonTCG.dir/src/scene/MenuScene.cpp.i
+
+CMakeFiles/ProjetPokemonTCG.dir/src/scene/MenuScene.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ProjetPokemonTCG.dir/src/scene/MenuScene.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/julie/Projet_Pokemon_IN204/src/scene/MenuScene.cpp -o CMakeFiles/ProjetPokemonTCG.dir/src/scene/MenuScene.cpp.s
+
+CMakeFiles/ProjetPokemonTCG.dir/src/scene/GameScene.cpp.o: CMakeFiles/ProjetPokemonTCG.dir/flags.make
+CMakeFiles/ProjetPokemonTCG.dir/src/scene/GameScene.cpp.o: /home/julie/Projet_Pokemon_IN204/src/scene/GameScene.cpp
+CMakeFiles/ProjetPokemonTCG.dir/src/scene/GameScene.cpp.o: CMakeFiles/ProjetPokemonTCG.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/julie/Projet_Pokemon_IN204/out/build/gccJulie0126/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ProjetPokemonTCG.dir/src/scene/GameScene.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjetPokemonTCG.dir/src/scene/GameScene.cpp.o -MF CMakeFiles/ProjetPokemonTCG.dir/src/scene/GameScene.cpp.o.d -o CMakeFiles/ProjetPokemonTCG.dir/src/scene/GameScene.cpp.o -c /home/julie/Projet_Pokemon_IN204/src/scene/GameScene.cpp
+
+CMakeFiles/ProjetPokemonTCG.dir/src/scene/GameScene.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ProjetPokemonTCG.dir/src/scene/GameScene.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/julie/Projet_Pokemon_IN204/src/scene/GameScene.cpp > CMakeFiles/ProjetPokemonTCG.dir/src/scene/GameScene.cpp.i
+
+CMakeFiles/ProjetPokemonTCG.dir/src/scene/GameScene.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ProjetPokemonTCG.dir/src/scene/GameScene.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/julie/Projet_Pokemon_IN204/src/scene/GameScene.cpp -o CMakeFiles/ProjetPokemonTCG.dir/src/scene/GameScene.cpp.s
+
 # Object files for target ProjetPokemonTCG
 ProjetPokemonTCG_OBJECTS = \
-"CMakeFiles/ProjetPokemonTCG.dir/src/main.cpp.o"
+"CMakeFiles/ProjetPokemonTCG.dir/src/main.cpp.o" \
+"CMakeFiles/ProjetPokemonTCG.dir/src/core/Game.cpp.o" \
+"CMakeFiles/ProjetPokemonTCG.dir/src/scene/MenuScene.cpp.o" \
+"CMakeFiles/ProjetPokemonTCG.dir/src/scene/GameScene.cpp.o"
 
 # External object files for target ProjetPokemonTCG
 ProjetPokemonTCG_EXTERNAL_OBJECTS =
 
 ProjetPokemonTCG: CMakeFiles/ProjetPokemonTCG.dir/src/main.cpp.o
+ProjetPokemonTCG: CMakeFiles/ProjetPokemonTCG.dir/src/core/Game.cpp.o
+ProjetPokemonTCG: CMakeFiles/ProjetPokemonTCG.dir/src/scene/MenuScene.cpp.o
+ProjetPokemonTCG: CMakeFiles/ProjetPokemonTCG.dir/src/scene/GameScene.cpp.o
 ProjetPokemonTCG: CMakeFiles/ProjetPokemonTCG.dir/build.make
 ProjetPokemonTCG: /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.6.1
 ProjetPokemonTCG: /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.6.1
 ProjetPokemonTCG: /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.6.1
 ProjetPokemonTCG: CMakeFiles/ProjetPokemonTCG.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/julie/Projet_Pokemon_IN204/out/build/gccJulie0126/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ProjetPokemonTCG"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/julie/Projet_Pokemon_IN204/out/build/gccJulie0126/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable ProjetPokemonTCG"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ProjetPokemonTCG.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

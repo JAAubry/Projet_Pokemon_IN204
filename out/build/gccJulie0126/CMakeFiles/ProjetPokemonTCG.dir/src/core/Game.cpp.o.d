@@ -1,5 +1,6 @@
-CMakeFiles/ProjetPokemonTCG.dir/src/main.cpp.o: \
- /home/julie/Projet_Pokemon_IN204/src/main.cpp /usr/include/stdc-predef.h \
+CMakeFiles/ProjetPokemonTCG.dir/src/core/Game.cpp.o: \
+ /home/julie/Projet_Pokemon_IN204/src/core/Game.cpp \
+ /usr/include/stdc-predef.h \
  /home/julie/Projet_Pokemon_IN204/src/core/Game.hpp \
  /usr/include/SFML/Graphics.hpp /usr/include/SFML/Window.hpp \
  /usr/include/SFML/System.hpp /usr/include/SFML/Config.hpp \
@@ -246,4 +247,6 @@ CMakeFiles/ProjetPokemonTCG.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/atomic_lockfree_defines.h \
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
- /home/julie/Projet_Pokemon_IN204/src/scene/Scene.hpp
+ /home/julie/Projet_Pokemon_IN204/src/scene/Scene.hpp \
+ /home/julie/Projet_Pokemon_IN204/src/scene/MenuScene.hpp \
+ /home/julie/Projet_Pokemon_IN204/src/scene/GameScene.hpp
