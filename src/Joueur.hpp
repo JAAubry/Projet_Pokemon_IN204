@@ -2,52 +2,57 @@
 
 #include <string>
 #include <vector>
-#include "carte.hpp"
+#include <memory>
+
+#include "CarteBase.hpp"
+#include "CartePokemon.hpp"
+#include "CarteDresseur.hpp"
 
 class Joueur {
 private:
     std::string nom;
     int points;
 
-    std::vector<Carte> pioche;
-    std::vector<Carte> main;
-    std::vector<Carte> banc;
+    std::vector<std::unique_ptr<CarteBase>> pioche;
+    std::vector<std::unique_ptr<CarteBase>> main;
+    std::vector<std::unique_ptr<CarteBase>> defausse;
 
-    Carte carteActive; // Carte active (vide si aucune)
+    std::unique_ptr<CartePokemon> carteActive;
+    std::vector<std::unique_ptr<CartePokemon>> banc;
+
+    bool supporterDejaJoue;
 
 public:
-    // Constructeurs
-    Joueur(const std::string& nom);
-    Joueur(const std::string& nom,
-           const std::vector<Carte>& main,
-           const std::vector<Carte>& pioche);
+    explicit Joueur(const std::string& nom);
 
-    // Getters (PAS de copies inutiles)
-    const std::string& getNom() const;
-    int getPoints() const;
+    // Deck
+    void initialiserDeck(std::vector<std::unique_ptr<CarteBase>> deck);
 
-    const Carte& getCarteActive() const;
-    const std::vector<Carte>& getMain() const;
-    const std::vector<Carte>& getPioche() const;
-    const std::vector<Carte>& getBanc() const;
+    // Tour
+    void debutTour();
+    void jouerTour(Joueur& adversaire);
 
-    // ----- État du joueur -----
-    bool aCarteActive() const;
-    bool bancVide() const;
-    bool piocheVide() const;
-    bool aPerdu() const;
-
-    // ----- Gestion de la pioche -----
-    void initialiserPioche(const std::vector<Carte>& cartes);
-    void melangerPioche();
-    void piocher(int nombre = 1);
-
-    // ----- Gestion des cartes -----
-    void jouerCarte(size_t index, bool versBanc); // false = active, true = banc
-    void promouvoirDepuisBanc(size_t index);
-    void mortCarte(); // retire la carte active si KO
-
-    // ----- Combat -----
-    bool peutAttaquer() const;
+    // Actions
+    void jouerCarteDepuisMain(size_t index);
     void attaquer(Joueur& adversaire);
+    void mortCarteActive();
+    void promouvoirApresKO(size_t indexBanc);
+
+    // Energie
+    void attacherEnergieActive(int q = 1);
+
+    // Etat
+    bool aPerdu() const;
+    bool aCarteActive() const;
+
+    // Supporter
+    void marquerSupporterJoue();
+    bool aDejaJoueSupporterCeTour() const;
+
+    // Utilitaires
+    void piocher(int n = 1);
+    void soignerCarteActive(int pv);
+    void afficherEtat() const;
+
+    const std::string& getNom() const;
 };

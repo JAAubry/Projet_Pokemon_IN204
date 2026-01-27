@@ -1,175 +1,110 @@
-#include "joueur.hpp"
+#include "Joueur.hpp"
 #include <iostream>
 #include <algorithm>
 #include <random>
 
-// ------------------
-// CONSTRUCTEURS
-// ------------------
 Joueur::Joueur(const std::string& nom)
-    : nom(nom), points(0), carteActive() {}
+    : nom(nom), points(0), supporterDejaJoue(false) {}
 
-Joueur::Joueur(const std::string& nom,
-               const std::vector<Carte>& main,
-               const std::vector<Carte>& pioche)
-    : nom(nom), points(0), pioche(pioche), main(main), banc(), carteActive() {
-    melangerPioche();
+void Joueur::initialiserDeck(std::vector<std::unique_ptr<CarteBase>> deck) {
+    pioche = std::move(deck);
+    std::shuffle(pioche.begin(), pioche.end(),
+                 std::mt19937{std::random_device{}()});
+    piocher(5);
 }
 
-// ------------------
-// GETTERS
-// ------------------
-const std::string& Joueur::getNom() const {
-    return nom;
+void Joueur::debutTour() {
+    supporterDejaJoue = false;
+    piocher(1);
 }
 
-int Joueur::getPoints() const {
-    return points;
-}
-
-const Carte& Joueur::getCarteActive() const {
-    return carteActive;
-}
-
-const std::vector<Carte>& Joueur::getMain() const {
-    return main;
-}
-
-const std::vector<Carte>& Joueur::getPioche() const {
-    return pioche;
-}
-
-const std::vector<Carte>& Joueur::getBanc() const {
-    return banc;
-}
-
-// ------------------
-// ÉTAT DU JOUEUR
-// ------------------
-bool Joueur::aCarteActive() const {
-    return !carteActive.estK.O();
-}
-
-bool Joueur::bancVide() const {
-    return banc.empty();
-}
-
-bool Joueur::piocheVide() const {
-    return pioche.empty();
-}
-
-bool Joueur::aPerdu() const {
-    return piocheVide() && !aCarteActive() && bancVide();
-}
-
-// ------------------
-// PIOCHE
-// ------------------
-void Joueur::initialiserPioche(const std::vector<Carte>& cartes) {
-    pioche = cartes;
-    melangerPioche();
-}
-
-void Joueur::melangerPioche() {
-    static std::random_device rd;
-    static std::mt19937 g(rd());
-    std::shuffle(pioche.begin(), pioche.end(), g);
-}
-
-void Joueur::piocher(int nombre) {
-    for (int i = 0; i < nombre; ++i) {
-        if (pioche.empty()) {
-            std::cout << nom << " ne peut plus piocher (pioche vide)." << std::endl;
-            return;
-        }
-        main.push_back(pioche.back());
+void Joueur::piocher(int n) {
+    while (n-- && !pioche.empty()) {
+        main.push_back(std::move(pioche.back()));
         pioche.pop_back();
     }
 }
 
-// ------------------
-// GESTION DES CARTES
-// ------------------
-void Joueur::jouerCarte(size_t index, bool versBanc) {
-    if (index >= main.size()) {
-        std::cout << "Index de carte invalide !" << std::endl;
+void Joueur::jouerCarteDepuisMain(size_t index) {
+    if (index >= main.size()) return;
+
+    if (auto* p = dynamic_cast<CartePokemon*>(main[index].get())) {
+        if (!carteActive) {
+            carteActive.reset(static_cast<CartePokemon*>(main[index].release()));
+        } else if (banc.size() < 3) {
+            banc.push_back(std::unique_ptr<CartePokemon>(
+                static_cast<CartePokemon*>(main[index].release())));
+        } else return;
+
+        main.erase(main.begin() + index);
         return;
     }
 
-    if (!versBanc) { // carte active
-        if (aCarteActive()) {
-            std::cout << "Une carte active est déjà en jeu !" << std::endl;
+    if (auto* d = dynamic_cast<CarteDresseur*>(main[index].get())) {
+        if (d->getTypeDresseur() == TypeDresseur::Supporter && supporterDejaJoue)
             return;
-        }
-        carteActive = main[index];
-        std::cout << nom << " joue " << carteActive.getNom()
-                  << " comme carte active." << std::endl;
-    } else { // banc
-        if (banc.size() >= 3) {
-            std::cout << "Banc plein (max 3 cartes)." << std::endl;
-            return;
-        }
-        banc.push_back(main[index]);
-        std::cout << nom << " joue " << main[index].getNom()
-                  << " sur le banc." << std::endl;
+
+        d->appliquerEffet(*this);
+        defausse.push_back(std::move(main[index]));
+        main.erase(main.begin() + index);
     }
-
-    main.erase(main.begin() + index);
-}
-
-void Joueur::promouvoirDepuisBanc(size_t index) {
-    if (index >= banc.size()) {
-        std::cout << "Index de banc invalide !" << std::endl;
-        return;
-    }
-
-    if (aCarteActive()) {
-        std::cout << "Une carte active est déjà en jeu !" << std::endl;
-        return;
-    }
-
-    carteActive = banc[index];
-    banc.erase(banc.begin() + index);
-
-    std::cout << nom << " promeut " << carteActive.getNom()
-              << " comme carte active." << std::endl;
-}
-
-void Joueur::mortCarte() {
-    if (carteActive.estK.O()) {
-        std::cout << nom << " perd sa carte active (KO)." << std::endl;
-        carteActive = Carte(); // carte vide
-    }
-}
-
-// ------------------
-// COMBAT
-// ------------------
-bool Joueur::peutAttaquer() const {
-    return aCarteActive();
 }
 
 void Joueur::attaquer(Joueur& adversaire) {
-    if (!peutAttaquer()) {
-        std::cout << nom << " ne peut pas attaquer (pas de carte active)." << std::endl;
-        return;
-    }
+    if (!carteActive || !adversaire.carteActive) return;
 
-    if (!adversaire.aCarteActive()) {
-        std::cout << adversaire.getNom()
-                  << " n'a pas de carte active." << std::endl;
-        return;
-    }
+    carteActive->attaquer(*adversaire.carteActive);
 
-    std::cout << nom << " attaque " << adversaire.getNom() << " !" << std::endl;
-
-    adversaire.carteActive.subirDegats(carteActive.getDegatsAttaque());
-
-    if (adversaire.carteActive.estK.O()) {
-        std::cout << adversaire.getNom()
-                  << " voit sa carte active mise KO !" << std::endl;
-
+    if (adversaire.carteActive->estKO()) {
+        adversaire.mortCarteActive();
         points++;
-        adversaire.mortCarte();
     }
+}
+
+void Joueur::mortCarteActive() {
+    defausse.push_back(std::move(carteActive));
+    if (!banc.empty()) promouvoirApresKO(0);
+}
+
+void Joueur::promouvoirApresKO(size_t index) {
+    carteActive = std::move(banc[index]);
+    banc.erase(banc.begin() + index);
+}
+
+void Joueur::attacherEnergieActive(int q) {
+    if (carteActive) carteActive->ajouterEnergie(q);
+}
+
+bool Joueur::aPerdu() const {
+    return !carteActive && banc.empty() && pioche.empty();
+}
+
+bool Joueur::aCarteActive() const {
+    return carteActive != nullptr;
+}
+
+void Joueur::soignerCarteActive(int pv) {
+    if (carteActive) carteActive->subirDegats(-pv);
+}
+
+void Joueur::afficherEtat() const {
+    std::cout << "\n--- " << nom << " ---\n";
+    if (carteActive) carteActive->afficher();
+    else std::cout << "Aucune carte active\n";
+    std::cout << "Main: " << main.size()
+              << " | Banc: " << banc.size()
+              << " | Pioche: " << pioche.size()
+              << std::endl;
+}
+
+void Joueur::marquerSupporterJoue() {
+    supporterDejaJoue = true;
+}
+
+bool Joueur::aDejaJoueSupporterCeTour() const {
+    return supporterDejaJoue;
+}
+
+const std::string& Joueur::getNom() const {
+    return nom;
 }
