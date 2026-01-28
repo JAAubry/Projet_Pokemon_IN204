@@ -250,4 +250,5 @@ CMakeFiles/ProjetPokemonTCG.dir/src/core/Game.cpp.o: \
  /home/julie/Projet_Pokemon_IN204/src/scene/Scene.hpp \
  /home/julie/Projet_Pokemon_IN204/src/scene/MenuScene.hpp \
  /home/julie/Projet_Pokemon_IN204/src/scene/GameScene.hpp \
+ /home/julie/Projet_Pokemon_IN204/src/view/ButtonView.hpp \
  /home/julie/Projet_Pokemon_IN204/src/view/CarteView.hpp

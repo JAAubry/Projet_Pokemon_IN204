@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ProjetPokemonTCG.dir/src/scene/GameScene.cpp.o.d"
   "CMakeFiles/ProjetPokemonTCG.dir/src/scene/MenuScene.cpp.o"
   "CMakeFiles/ProjetPokemonTCG.dir/src/scene/MenuScene.cpp.o.d"
+  "CMakeFiles/ProjetPokemonTCG.dir/src/view/ButtonView.cpp.o"
+  "CMakeFiles/ProjetPokemonTCG.dir/src/view/ButtonView.cpp.o.d"
   "CMakeFiles/ProjetPokemonTCG.dir/src/view/CarteView.cpp.o"
   "CMakeFiles/ProjetPokemonTCG.dir/src/view/CarteView.cpp.o.d"
   "ProjetPokemonTCG"
