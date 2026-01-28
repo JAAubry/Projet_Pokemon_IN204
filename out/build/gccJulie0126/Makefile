@@ -225,6 +225,30 @@ src/scene/MenuScene.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetPokemonTCG.dir/build.make CMakeFiles/ProjetPokemonTCG.dir/src/scene/MenuScene.cpp.s
 .PHONY : src/scene/MenuScene.cpp.s
 
+src/view/CarteView.o: src/view/CarteView.cpp.o
+.PHONY : src/view/CarteView.o
+
+# target to build an object file
+src/view/CarteView.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetPokemonTCG.dir/build.make CMakeFiles/ProjetPokemonTCG.dir/src/view/CarteView.cpp.o
+.PHONY : src/view/CarteView.cpp.o
+
+src/view/CarteView.i: src/view/CarteView.cpp.i
+.PHONY : src/view/CarteView.i
+
+# target to preprocess a source file
+src/view/CarteView.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetPokemonTCG.dir/build.make CMakeFiles/ProjetPokemonTCG.dir/src/view/CarteView.cpp.i
+.PHONY : src/view/CarteView.cpp.i
+
+src/view/CarteView.s: src/view/CarteView.cpp.s
+.PHONY : src/view/CarteView.s
+
+# target to generate assembly for a file
+src/view/CarteView.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetPokemonTCG.dir/build.make CMakeFiles/ProjetPokemonTCG.dir/src/view/CarteView.cpp.s
+.PHONY : src/view/CarteView.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -246,6 +270,9 @@ help:
 	@echo "... src/scene/MenuScene.o"
 	@echo "... src/scene/MenuScene.i"
 	@echo "... src/scene/MenuScene.s"
+	@echo "... src/view/CarteView.o"
+	@echo "... src/view/CarteView.i"
+	@echo "... src/view/CarteView.s"
 .PHONY : help
 
 
