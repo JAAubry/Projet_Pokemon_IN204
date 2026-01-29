@@ -8,9 +8,13 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "/home/julie/Projet_Pokemon_IN204/CMakeLists.txt"
-  "/home/julie/Projet_Pokemon_IN204/data/cards_debut.json"
   "CMakeFiles/3.28.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeSystem.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfig.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigDependencies.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigVersion.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets-none.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeGenericSystem.cmake"
@@ -36,7 +40,6 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "cards_debut.json"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 

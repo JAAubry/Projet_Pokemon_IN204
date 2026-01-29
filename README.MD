@@ -1,6 +1,9 @@
 Ici on fera la doc <br>
 lien du notion (a supprimer avant le rendu): https://www.notion.so/Projet-IN204-2ca011f9bf33800b9cb1fa8f7491c8fd?source=copy_link
 
+Nécessite SFML version 2.6.1
+linux : sudo apt-get install libsfml-dev
+
 # Execution
 ## Faire suite à des modifications des fichiers
 se placer à la racine

@@ -129,6 +129,30 @@ ProjetPokemonTCG/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetPokemonTCG.dir/build.make CMakeFiles/ProjetPokemonTCG.dir/build
 .PHONY : ProjetPokemonTCG/fast
 
+src/core/Game.o: src/core/Game.cpp.o
+.PHONY : src/core/Game.o
+
+# target to build an object file
+src/core/Game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetPokemonTCG.dir/build.make CMakeFiles/ProjetPokemonTCG.dir/src/core/Game.cpp.o
+.PHONY : src/core/Game.cpp.o
+
+src/core/Game.i: src/core/Game.cpp.i
+.PHONY : src/core/Game.i
+
+# target to preprocess a source file
+src/core/Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetPokemonTCG.dir/build.make CMakeFiles/ProjetPokemonTCG.dir/src/core/Game.cpp.i
+.PHONY : src/core/Game.cpp.i
+
+src/core/Game.s: src/core/Game.cpp.s
+.PHONY : src/core/Game.s
+
+# target to generate assembly for a file
+src/core/Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetPokemonTCG.dir/build.make CMakeFiles/ProjetPokemonTCG.dir/src/core/Game.cpp.s
+.PHONY : src/core/Game.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -153,6 +177,102 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetPokemonTCG.dir/build.make CMakeFiles/ProjetPokemonTCG.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/scene/GameScene.o: src/scene/GameScene.cpp.o
+.PHONY : src/scene/GameScene.o
+
+# target to build an object file
+src/scene/GameScene.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetPokemonTCG.dir/build.make CMakeFiles/ProjetPokemonTCG.dir/src/scene/GameScene.cpp.o
+.PHONY : src/scene/GameScene.cpp.o
+
+src/scene/GameScene.i: src/scene/GameScene.cpp.i
+.PHONY : src/scene/GameScene.i
+
+# target to preprocess a source file
+src/scene/GameScene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetPokemonTCG.dir/build.make CMakeFiles/ProjetPokemonTCG.dir/src/scene/GameScene.cpp.i
+.PHONY : src/scene/GameScene.cpp.i
+
+src/scene/GameScene.s: src/scene/GameScene.cpp.s
+.PHONY : src/scene/GameScene.s
+
+# target to generate assembly for a file
+src/scene/GameScene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetPokemonTCG.dir/build.make CMakeFiles/ProjetPokemonTCG.dir/src/scene/GameScene.cpp.s
+.PHONY : src/scene/GameScene.cpp.s
+
+src/scene/MenuScene.o: src/scene/MenuScene.cpp.o
+.PHONY : src/scene/MenuScene.o
+
+# target to build an object file
+src/scene/MenuScene.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetPokemonTCG.dir/build.make CMakeFiles/ProjetPokemonTCG.dir/src/scene/MenuScene.cpp.o
+.PHONY : src/scene/MenuScene.cpp.o
+
+src/scene/MenuScene.i: src/scene/MenuScene.cpp.i
+.PHONY : src/scene/MenuScene.i
+
+# target to preprocess a source file
+src/scene/MenuScene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetPokemonTCG.dir/build.make CMakeFiles/ProjetPokemonTCG.dir/src/scene/MenuScene.cpp.i
+.PHONY : src/scene/MenuScene.cpp.i
+
+src/scene/MenuScene.s: src/scene/MenuScene.cpp.s
+.PHONY : src/scene/MenuScene.s
+
+# target to generate assembly for a file
+src/scene/MenuScene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetPokemonTCG.dir/build.make CMakeFiles/ProjetPokemonTCG.dir/src/scene/MenuScene.cpp.s
+.PHONY : src/scene/MenuScene.cpp.s
+
+src/view/ButtonView.o: src/view/ButtonView.cpp.o
+.PHONY : src/view/ButtonView.o
+
+# target to build an object file
+src/view/ButtonView.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetPokemonTCG.dir/build.make CMakeFiles/ProjetPokemonTCG.dir/src/view/ButtonView.cpp.o
+.PHONY : src/view/ButtonView.cpp.o
+
+src/view/ButtonView.i: src/view/ButtonView.cpp.i
+.PHONY : src/view/ButtonView.i
+
+# target to preprocess a source file
+src/view/ButtonView.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetPokemonTCG.dir/build.make CMakeFiles/ProjetPokemonTCG.dir/src/view/ButtonView.cpp.i
+.PHONY : src/view/ButtonView.cpp.i
+
+src/view/ButtonView.s: src/view/ButtonView.cpp.s
+.PHONY : src/view/ButtonView.s
+
+# target to generate assembly for a file
+src/view/ButtonView.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetPokemonTCG.dir/build.make CMakeFiles/ProjetPokemonTCG.dir/src/view/ButtonView.cpp.s
+.PHONY : src/view/ButtonView.cpp.s
+
+src/view/CarteView.o: src/view/CarteView.cpp.o
+.PHONY : src/view/CarteView.o
+
+# target to build an object file
+src/view/CarteView.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetPokemonTCG.dir/build.make CMakeFiles/ProjetPokemonTCG.dir/src/view/CarteView.cpp.o
+.PHONY : src/view/CarteView.cpp.o
+
+src/view/CarteView.i: src/view/CarteView.cpp.i
+.PHONY : src/view/CarteView.i
+
+# target to preprocess a source file
+src/view/CarteView.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetPokemonTCG.dir/build.make CMakeFiles/ProjetPokemonTCG.dir/src/view/CarteView.cpp.i
+.PHONY : src/view/CarteView.cpp.i
+
+src/view/CarteView.s: src/view/CarteView.cpp.s
+.PHONY : src/view/CarteView.s
+
+# target to generate assembly for a file
+src/view/CarteView.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetPokemonTCG.dir/build.make CMakeFiles/ProjetPokemonTCG.dir/src/view/CarteView.cpp.s
+.PHONY : src/view/CarteView.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,9 +282,24 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ProjetPokemonTCG"
+	@echo "... src/core/Game.o"
+	@echo "... src/core/Game.i"
+	@echo "... src/core/Game.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/scene/GameScene.o"
+	@echo "... src/scene/GameScene.i"
+	@echo "... src/scene/GameScene.s"
+	@echo "... src/scene/MenuScene.o"
+	@echo "... src/scene/MenuScene.i"
+	@echo "... src/scene/MenuScene.s"
+	@echo "... src/view/ButtonView.o"
+	@echo "... src/view/ButtonView.i"
+	@echo "... src/view/ButtonView.s"
+	@echo "... src/view/CarteView.o"
+	@echo "... src/view/CarteView.i"
+	@echo "... src/view/CarteView.s"
 .PHONY : help
 
 

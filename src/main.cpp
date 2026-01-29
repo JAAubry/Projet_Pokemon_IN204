@@ -1,7 +1,7 @@
-#include "carte.hpp"
-#include "joueur.hpp"
+#include "core/Game.hpp"
 
 int main() {
-
-    auto pokemons = loadPokemon("cards_debut.json") ;
+    Game game;
+    game.run();
+    return 0;
 }
